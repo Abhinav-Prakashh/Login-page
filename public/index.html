@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- accidentally wrote /public/style.css wrong when using express -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
@@ -16,7 +17,8 @@
             <h2>Sign in</h2><br>
             <form action="/submit" method="POST">
                 <label for="email">Username or Email:</label><br>
-                <input type="text" name="email" required /><br>
+                <input type="text" name="email"  required /><br>
+                <!-- name attribute is required for req.body in the server -->
                 <label for="password">Password:</label><br>
                 <input type="password" name="password" required /><br>
                 <input type="submit" value="Sign In" id="btn"/>
@@ -27,6 +29,6 @@
             </div>
         </div>
     </div>
-    <script src="/public/script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
