@@ -1,0 +1,19 @@
+body{
+    font-family:'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#f9f9f9, #faf0d7);
+}
+
+.login-box{
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    height: 600px;
+    width: 400px;
+    border-radius: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
